@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Symbol__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Registered&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Registered.svg&quot;, &quot;Registered&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Waiting&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Waiting.svg&quot;, &quot;Waiting&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Unassigned&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Unassigned.svg&quot;, &quot;Unassigned&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Unassigned 2nd Line&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Unassigned.svg&quot;, &quot;Unassigned 2nd Line&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;In Progress&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/In_progress.svg&quot;, &quot;InProgress&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;In Progress 2nd Line&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/In_progress.svg&quot;, &quot;InProgress&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Unassigned 3rd Line&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Unassigned.svg&quot;, &quot;InProgress&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Resolved&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Resolved.svg&quot;, &quot;Resolved&quot;,18,18),
+IF(($Profile.Name = &quot;Partner Users Create/Edit&quot; || $Profile.Name = &quot;Partner Users Read Only&quot;) &amp;&amp; ISPICKVAL(Status, &quot;Closed&quot;), IMAGE(&quot;/partners/resource/Statusicons/status_icons/Resolved.svg&quot;, &quot;Closed&quot;,18,18),
+IF(ISPICKVAL(Status, &quot;Registered&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Registered.svg&quot;,&quot;Registered&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;Waiting&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Waiting.svg&quot;, &quot;Waiting&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;Unassigned&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Unassigned.svg&quot;, &quot;Unassigned&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;Unassigned 2nd Line&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Unassigned.svg&quot;, &quot;Unassigned 2nd Line&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;In Progress&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/In_progress.svg&quot;, &quot;InProgress&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;In Progress 2nd Line&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/In_progress.svg&quot;, &quot;InProgress&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;Unassigned 3rd Line&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Unassigned.svg&quot;, &quot;InProgress&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;Resolved&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Resolved.svg&quot;, &quot;Resolved&quot;,18,18), 
+IF(ISPICKVAL(Status, &quot;Closed&quot;), IMAGE(&quot;/resource/Statusicons/status_icons/Resolved.svg&quot;, &quot;Closed&quot;,18,18), &apos;No Status&apos;))))))))))))))))))</formula>
+    <label>Status Symbol</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
